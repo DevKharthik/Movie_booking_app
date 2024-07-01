@@ -1,13 +1,11 @@
-{
-    "version": 2,
-    "name": "movie-backend",
-    "builds": [
-        {
-          "src": "package.json", 
-          "use": "vercel-sapper"
-        }
-      ],
-    "routes": [
-       { "src": "/(.*)", "dest": "/app.js" }
-    ]
-}
+ {
+   "version": 2,
+   "name": "movie-backend",
+   "builds": [
+     { "src": "app.js", "use": "@vercel/node" }
+   ],
+   "routes": [
+     { "src": "/(.*)", "dest": "/app.js" }
+   ]
+ }
+ 
